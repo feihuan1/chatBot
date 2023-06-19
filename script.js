@@ -1,4 +1,4 @@
-import { key } from "./private/secrets.js";
+import { key } from "./secrets.js";
 console.log(key)
 const sendChatBtn = document.querySelector(".chat-input span");
 const chatInput = document.querySelector(".chat-input textarea");

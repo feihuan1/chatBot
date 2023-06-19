@@ -1,2 +1,2 @@
-const key = "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";
+const key = "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";
 export {key};
