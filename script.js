@@ -1,3 +1,5 @@
+import { key } from "./private/secrets.js";
+console.log(key)
 const sendChatBtn = document.querySelector(".chat-input span");
 const chatInput = document.querySelector(".chat-input textarea");
 const chatbox = document.querySelector(".chatbox");
@@ -6,7 +8,7 @@ const chatbotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
 const inputInitHeight = chatInput.scrollHeight
-const API_KEY = "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";
+const API_KEY = key;
 
 const createChatLi = (message, className) => {
   const chatLi = document.createElement("li");
@@ -85,6 +87,8 @@ chatInput.addEventListener('keydown', (e) => {
     handleChat();
   }
 })
+
+
 
 
 sendChatBtn.addEventListener("click", handleChat);
