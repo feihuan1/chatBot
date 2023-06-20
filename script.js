@@ -48,7 +48,7 @@ const generateResponse = (incomingChatLi) => {
 
     console.log(error)
     messageElement.classList.add('error')
-    messageElement.textContent = 'You ask me Toooo many questions in a day, API will make the poor dev broke...'
+    messageElement.textContent = 'Somethin went wrong...'
   }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight))
 };
 
